@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <div class="row justify-content-md-center mb-4">
+        <h3 class='text-primary'>Prediksi Jumlah Jiwa Terdampak berdasarkan data yang diinput adalah : {{ prediction[0] }}</h3>
+    </div>
+
+    <div class="row justify-content-md-center">
+        <div class="thumbnail">
+                <img src="{{url_for('static', filename='images/banjir4.jpg')}}" class="img-thumbnail" />
+        </div>
+
+
+    <div align="center">
+        <a href="javascript:history.back()"><img src="{{url_for('static', filename='images/back.png')}}"/></a>
+        <p><b>Back</b></p>
+    </div>
+
+{% endblock %}
